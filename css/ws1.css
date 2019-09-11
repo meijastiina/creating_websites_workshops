@@ -1,0 +1,15 @@
+body {
+  background: #efefef; /* Light grey defined as HEX value */
+  font-family: Verdana, sans-serif;
+}
+/* All style definitions for header 1 */
+h1 {
+  font-family: Impact, sans-serif;
+  font-size: 250%;
+  color: blue;
+}
+/* All style definitions for elements with class="highlighted-text" */
+.highlighted-text {
+  color: red;
+  font-style: italic;
+}
