@@ -1,0 +1,76 @@
+/* First we have all the element stylings */
+body {
+  background: #ffffff; /* White defined as HEX value */
+  font-family: Verdana, sans-serif;
+  width: 90%;
+  margin: auto;
+}
+/* All style definitions for header 1 */
+h1 {
+  font-family: Impact, sans-serif;
+  font-size: 350%;
+  color: #0157A8; /* This is the dark blue in SeAMK logo */
+  text-transform: uppercase; /* This makes all letters uppercase */
+  border-bottom: 1px solid #0157A8; /* This adds a bottom border with the same dark blue colour */
+}
+h2 {
+  font-family: Impact, sans-serif;
+  font-weight: normal;
+  font-size: 250%;
+  color: #36B558; /* This is the green colour in SeaMK logo */
+  margin: 30px 0 10px 0; /* 50px top, 0 right, 10 bottom, 0 left */
+  border-top: 1px solid #36B558;
+  padding: 15px 0;
+}
+p {
+  line-height: 1.5;
+}
+hr {
+  border: 1px solid #02BCE3; /* This is the turquoise of the SeAMK logo */
+}
+footer {
+  text-align: center;
+  margin: 50px 0;
+  font-style: italic;
+  color: #69696B; /* Dark gray */
+}
+table, tr, td, th {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  padding: 5px 10px; /* This adds whitespace to table cells */
+}
+td:last-of-type {
+  text-align: right; /* This aligns last column right (numeric value) */
+}
+tr:nth-child(even) { /* This styles every even row */
+  background-color: #efefef;
+}
+tr:first-of-type { /* This styles first row */
+  background-color: #0157A8;
+  color: #ffffff;
+}
+tr:last-of-type { /* This styles last row */
+  font-style: italic;
+  font-weight: bold;
+  background-color: #36B558;
+  color: #ffffff;
+}
+/* Here we begin with the class based styling */
+/* All style definitions for elements with class="highlighted-text" */
+.highlighted-text {
+  color: red;
+  font-style: italic;
+}
+/* All style definitions for elements with class="bordered" */
+.bordered {
+  border: 2px solid #02BCE3; /* This is the turquoise of the SeAMK logo */
+}
+/* All style definitions for elements with class="whitespace" */
+.whitespace {
+  padding: 10px;
+  margin: 25px;
+}

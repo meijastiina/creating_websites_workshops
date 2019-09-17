@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- Link to the external css file -->
-		<link rel="stylesheet" href="css/ws4.css">
+		<link rel="stylesheet" href="css/ws5.css">
     <title>Workshop - 5: Tables and Forms</title>
   </head>
   <body>
@@ -17,8 +17,57 @@
     <p>Col and row spans are often quite difficult to understand at first. Have at least one colspan or rowspan.</p>
     <h3>Utilize Pseudo Classes</h3>
     <p>Use at least one pseudo class ex. define zebra striping/define styles for first column.</p>
+    <table>
+      <tr>
+        <th>Lastname</th>
+        <th>Firstname</th>
+        <th>D.O.B</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>Smith</td>
+        <td>John</td>
+        <td>01.01.1978</td>
+        <td>3200</td>
+      </tr>
+      <tr>
+        <td>Smith</td>
+        <td>John</td>
+        <td>01.01.1978</td>
+        <td>3200</td>
+      </tr>
+      <tr>
+        <td>Smith</td>
+        <td>Jane</td>
+        <td>01.06.1970</td>
+        <td>2200</td>
+      </tr>
+      <tr>
+        <td>Brown</td>
+        <td>Susan</td>
+        <td>07.01.1988</td>
+        <td>4000</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td colspan="3">
+          12600
+        </td>
+    </table>
     <h2>2. Create a form with different input types.</h2>
     <p>Have at least three inputs, one select and a submit button. Define labels for inputs. </p>
+    <form>
+      <label>Name: <input type="text"></label>
+      <label>DoB: <input type="date"></label>
+      <label>Password: <input type="password"></label>
+      <label>Your opinion on this course:</label>
+      <select>
+        <option>This is fun!</option>
+        <option>Boring..</option>
+        <option>Quite ok</option>
+      </select>
+      <input type="submit">
+    </form>
     <h2>3. Validate your HTML and CSS</h2>
     <h2>4. Publish your page.</h2>
     <footer>
