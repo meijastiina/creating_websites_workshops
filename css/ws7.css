@@ -1,0 +1,30 @@
+ul.navigation {
+  /* Let's center our menu */
+  text-align: center;
+  margin: 10px auto 50px auto;
+}
+.navigation li {
+  /* This makes list items line up horizontally */
+  display: inline;
+}
+.navigation li a {
+  font-family: Impact, sans-serif;
+  font-size: 150%;
+  text-decoration: none; /* This removes underlining */
+  border-left: 1px solid #0157A8;
+  /* Adds ten pixels of whitespace on the left and right */
+  padding: 0 10px;
+}
+/* Let's remove the left border from the first item */
+.navigation li:first-of-type a {
+  border-left: none;
+}
+/* Let's change the colour of visited pages to green */
+.navigation li a:visited {
+  color: #36B558;
+}
+/* Let's highlight the active page with underlining */
+.navigation li.active {
+  border-bottom: 2px solid #0157A8;
+  padding-bottom: 10px;
+}
