@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 ul.navigation {
   /* Let's center our menu */
   text-align: center;
@@ -23,8 +26,53 @@ ul.navigation {
 .navigation li a:visited {
   color: #36B558;
 }
+.navigation li a:hover {
+  color: #0157A8;
+}
 /* Let's highlight the active page with underlining */
 .navigation li.active {
   border-bottom: 2px solid #0157A8;
   padding-bottom: 10px;
+}
+/* Let's create two column layout */
+header {
+      border-bottom: 1px solid #0157A8;
+}
+aside, main {
+  float: left;
+}
+aside {
+  width: 20%;
+  padding-right: 40px;
+}
+main {
+  width: 80%;
+}
+footer {
+  clear: both;
+}
+/* Let's remove the top border from the first element */
+h2:first-of-type {
+  border-top: none;
+}
+/* Here styling for left column navigation */
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+aside ul li {
+  background-color: #36B558;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+aside ul a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Impact, sans-serif;
+  font-size: 150%;
+  display: block;
+}
+aside ul li:hover {
+   background-color: #0157A8;
 }
