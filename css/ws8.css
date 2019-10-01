@@ -1,0 +1,49 @@
+body {
+      background-image: url('https://storage.googleapis.com/seamk-production/2019/03/yhteishaku-2019-2000x800px-1920x768.jpg');
+      background-size: cover;
+      background-position: bottom;
+}
+h1 {
+  text-shadow: 2px 2px 1px #36B558;
+}
+h2 {
+  text-shadow: 2px 2px 1px #0157A8;
+}
+.shadow-box {
+  -webkit-box-shadow: 2px 2px 2px 2px #0157A8;
+  box-shadow: 2px 2px 2px 2px #0157A8;
+  border: 1px solid #36B558;
+  padding: 15px;
+}
+aside li:hover {
+  -webkit-transition: background 2s ease;
+  -moz-transition: background 2s ease;
+  -ms-transition: background 2s ease;
+  -o-transition: background 2s ease;
+  transition: background 2s ease;
+}
+.navigation li {
+  border-bottom: 0 solid #0157A8;
+  transition: border-width 0.6s linear;
+  padding-bottom: 10px;
+}
+.navigation li:hover {
+  border-bottom-width: 2px;
+}
+.flex-img {
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  /* Let's remove bg image on small screens */
+  body {
+    background-color: #ffffff;
+    background-image: none;
+  }
+  /* Let's have everything in one fullwidth column on small screens */
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+}

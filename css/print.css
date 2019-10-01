@@ -1,0 +1,24 @@
+/* Hide all elements you don't want printed */
+nav, aside {
+  display: none;
+}
+/* Let's remove background */
+body {
+  background: none;
+}
+/* Let's change headings to black and remove text shadow */
+h1, h2 {
+  text-shadow: none;
+  color: #000000;
+  border-top-color: #000000;
+}
+hr, header {
+  border-color: #000000;
+}
+.shadow-box {
+  box-shadow: none;
+  border-color: #000000;
+}
+main, body {
+  width: 100%;
+}
