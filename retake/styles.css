@@ -1,0 +1,215 @@
+/* These styles are applied to all elements */
+* {
+  box-sizing: border-box; /* Size includes padding & borders */
+}
+body {
+  background: #82b97b; /* green */
+  font-family: Roboto ,sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+/* Pink header bar */
+header {
+  background: #da4667; /* pink */
+  padding: 20px;
+  text-align: center;
+}
+/* White navigation bar */
+nav {
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+/* Footer on the bottom with copyright */
+footer {
+  width: 100%;
+  text-align: center;
+  background: #ab9265; /* brown */
+  position: absolute; /* To make it always be on bottom */
+  bottom: 0;
+  font-style: italic;
+}
+/* Heading style 1 */
+h1, .header-decoration {
+  color: #ffffff; /* white */
+  font-style: italic;
+  margin-right: 20px;
+  font-size: 500%;
+  display: inline; /* By default block */
+
+}
+/* General styling for headings */
+h1, h2, h3, .col, ul {
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+/* Unordered list used in navigation */
+ul {
+  font-size: 150%;
+}
+/* This class is used to make elements look like h1 */
+.header-decoration {
+  margin-right: 0;
+}
+/* Page layout elements that need to be floated */
+.page-container, footer, aside, main, nav {
+  float: left;
+}
+/* Main is the content between header and footer */
+main {
+  margin: 20px;
+}
+/* Page-container is header, main & footer */
+.page-container {
+  width: 100%;
+  position: relative;
+  float: left;
+  min-height: 100vh;
+}
+/* Side navigation */
+aside ul {
+  padding: 20px;
+  margin: 0 20px 20px 0;
+  background: #ffffff;
+}
+/* List item styling for side navigation */
+aside li, nav li {
+  list-style-type: none; /* Removes bullet points */
+  margin: 10px;
+}
+/* To make the list horizontal, let's set the display property */
+nav li {
+  display: inline;
+}
+/* Anchor styling for side navigation */
+aside li a, nav li a {
+  text-decoration: none; /* Gets rid of underlining */
+  text-transform: uppercase; /* Makes all letters uppercase */
+  color: #5ba6c4; /* blue */
+  font-weight: bold;
+}
+/* Hover styling for all anchor elements */
+a:hover{
+    color: #da4667;
+}
+/* General style to be used wherever text is blue */
+.blue {
+  color: #5ba6c4;
+}
+/* General style to be used wherever text is brown */
+.brown {
+  color: #ab9265;
+}
+/* General style to be used wherever text is white */
+.white, h3 {
+  color: #ffffff;
+}
+/* General style to be used wherever text is pink */
+.pink, h2 {
+  color: #da4667;
+}
+/* Styling for spans in header */
+header span {
+  margin: 0;
+  padding: 0;
+  margin-right: -20px;
+}
+/* Styling for rows */
+.row {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.row:first-of-type {
+  margin-top: 30px;
+}
+/* Styling for cols */
+.col {
+  display: table-cell; /* This makes the element act like a table cell */
+  margin: 10px;
+  padding: 10px;
+  vertical-align: middle; /* On table cells you define vertical align */
+  text-align: center;
+  width: 33%; /* By default three columns */
+}
+/* General styling for text in columns */
+.col p, .col legend {
+  font-weight: bold;
+  font-size: 250%;
+}
+.col p label {
+  font-size: 60%;
+}
+/* General styling for forms in columns */
+.col form {
+  width: 100%;
+}
+/* Styles for brown elements */
+.col.brown, .round.brown {
+  background: #ab9265;
+  color: #ffffff;
+}
+/* Styles for green elements */
+.col.green, .round.green {
+  background: #82b97b;
+}
+/* Styles for pink elements */
+.col.pink, .round.pink {
+  background: #da4667;
+  color: #82b97b;
+}
+/* Styles for blue elements */
+.col.blue, .round.blue {
+  background: #5ba6c4;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.col.blue fieldset {
+  border-color: #ffffff;
+}
+/* Styles for white elements */
+.col.white {
+  background: #ffffff;
+  color: #da4667;
+}
+/* General styling for text inputs */
+input[type=submit] {
+  background: white;
+  padding: 5px;
+  border: 1px solid gray;
+}
+/* Class to be used on elements floated right */
+.float-right {
+  float: right;
+  margin: 30px;
+}
+/* Media queries to change the cols in small screens */
+@media only screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: table-row;
+  }
+}
+
+/**************************************************************/
+/* STYLING FOR GUIDE */
+/* General styling for round elements */
+.round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* Class to be used on elements where text is to be aligned left */
+.align-left {
+  text-align: left;
+  vertical-align: top;
+}
+/* General styling for table cells */
+td {
+  font-style: normal;
+}
+/* General styling for four column row columns */
+.four .col {
+  width: 25%;
+}
